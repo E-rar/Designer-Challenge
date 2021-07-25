@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Roboto, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#logo{ /*logo gestylt und positioniert */
+    display:flex;
+    height:8vh;
+    margin-left:2%;
+}
+#logo img{
+    width:4%;
+    margin-top:1.5%;
+    
+}
+#logo article{
+    line-height: 1.5vh;
+    margin-top:2%;
+    margin-left:0.5%;
+}
+#logo article h4{
+    font-size:3.5vh;
+}
+#logo article p{
+    font-size:2vh;
+}
+/*section hintergrund*/
+#hero{
+    background-image: url("../img/ilustracion1.png");
+    background-position: top right;
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+}
+/*section headline*/
+#headline{
+    display:flex;
+}
+#headline article{
+    padding:30vh 0 0 10%;
+}
+#headline article h1{
+    font-size:9vh;
+    
+}
+#headline article h5 {
+    display:inline;
+    font-size: 3vh;
+    margin-top:5%;
+}
+
+#headline article img{ /*Animation damit der Typ schwebt*/
+    width:6%;
+}
+@keyframes move{
+    0%{
+        top:0%;
+    } 
+    50%{
+        top:2%;
+    }
+   
+    100%{
+        top:0%;
+    }
+}
+#headline div img{
+    width:45vw;
+    position:relative;
+    animation:move infinite ease  3.5s;
+    
+}
+/*stylen vom roten scroll to see more*/
+#scroll{
+    margin-left:10%;
+    color:#ff3571 ;
+    font-weight:bold;
+}
+/*die section mti dem großen picture*/
+#picture {
+    height:70vh;
+    margin:15% 0 20% 0;
+    background-image: url("../img/images.jpg");
+    background-position: center;
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    background-size:98%;
+
+}
+/*Idea*/
+#idea{
+    display:flex;
+    margin-bottom:10%;
+}
+#idea article:first-child{
+    font-size:6vh;
+    flex-basis:30%;
+    padding:0 0 0 10%;
+    font-weight: 900;
+    
+}
+#idea article:first-child img{
+width:15%;
+}
+#idea article:last-child{
+    padding:3% 0  0 7%;
+    font-size:2.5vh;
+    line-height: 5vh;
+    width:45%;
+}
+/*article1 */
+#article1 h1{
+    font-size:8vh;
+    padding:10%;
+}
+#article1 div article {
+    display:inline-block;
+    width:35%;
+}
+#article1 div{
+    padding-left:10%;
+}
+#article1 div article:nth-child(2){
+    padding:5% 0 0 6%;
+}
+
+#article1 p{
+    line-height: 4.5vh;
+    padding-left:21%;
+}
+#article1{
+    padding:0 0 15% 0;
+}
+.headline{
+    padding:0;
+    margin:0;
+    display:flex;
+}
+
+#article1 img{
+    width:7%;
+    
+}
+
+#article1 h3{
+    
+    padding-left:5%;
+}
+/*Gallery*/
+#gallery div:first-child{
+    text-align:center;
+}
+#gallery div article h2{
+    font-size:8vh;
+}
+#gallery div:first-child article p{
+    padding:5% 0;
+    line-height:4vh;
+    font-size:3vh;
+}
+/*divs mit den hintergrundbildern*/
+.left{
+    background-position:left;
+    margin-left:5%;
+}
+.right{
+    background-position: right;
+    margin-right:5%;
+}
+.number{
+    color:#dddddd ;
+}
+#gallery img{
+    width:8%;
+    padding:8% 0 2% 0;
+    
+}
+#gallery h4{
+    padding :4% 0;
+}
+#gallery p {
+    line-height:5vh;
+    font-size:2.5vh;
+}
+#first{
+    height:80vh;
+    background-image: url("../img/step01.png");
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+#second{
+    height:80vh;
+    background-image: url("../img/step02.png");
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+#third{
+    height:80vh;
+    background-image: url("../img/step03.png");
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+#fourth{
+    height:80vh;
+    background-image: url("../img/step04.png");
+    background-attachment: cover;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.left article{
+    width:40%;
+    padding-top:5%;
+    padding-left:50%;
+}
+.right article{
+    width:40%;
+    padding-top:5%;
+    padding-right:50%;
+    margin-left:5%;
+}
+/*form-section*/
+#form-section{
+    text-align:center;
+    margin-top:12%;
+}
+#form-section h2{
+    font-size:8vh;
+    padding: 5% 0;
+}
+#form-section p{
+    font-size:4.5vh;
+    padding:0 0 5% 0;
+}
+input[type=email] {
+    padding:1.5% 8%;
+    border:0;
+    font-size:3vh;
+    color:#0b0c17;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    text-align:center;
+    border-radius:0.5vh;
+    margin-bottom:3%;
+  }
+  #form-section a {
+    text-decoration: none;
+    padding:1.25% 6%;
+    border:0;
+    font-size:3vh;
+    color:#fff;
+    background-color: #ff3571;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    text-align:center;
+    border-radius:0.5vh;
+    margin-bottom:3%;
+    cursor:pointer;
+  }
+
+/*footer*/
+footer{
+    margin-top:10%;
+    margin-left:5%;
+    display:flex;
+    padding-bottom:0.5%;
+}
+footer img{
+    width:2%;
+}
+/*stylen des pop-ups*/
+#subscribed{
+    height:100vh;
+
+    
+}
+#subscribed img{
+    width:3%;
+    padding:1%;
+}
+#subscribed article{
+    width:60%;
+    height:50%;
+    margin:5% auto;
+    text-align:center;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#subscribed h1{
+    font-size: 6vh;
+    padding:5% 0;
+}
+#subscribed a {
+    background-color: #7235ff;
+    text-decoration: none;
+    padding:1.25% 6%;
+    border:0;
+    font-size:3vh;
+    color:#fff;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    text-align:center;
+    border-radius:0.5vh;
+    cursor:pointer;
+}
+#subscribed p{
+    padding-bottom:7%;
+}
+#subscribed footer img{
+    width:2%;
+    height:2%;
+    padding:2% 0.5% 0 0;
+}
+#subscribed footer p{
+    padding:2% 0 0 0 ;
+}
