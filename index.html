@@ -7,8 +7,22 @@
     <title>Designer Challenge</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    
+<body><!--  pop-up -->
+    <div id="subscribed">
+        <img src="assets/img/logo.svg"  alt="">
+        <article>
+            <h2>YOUR EMAIL HAS BEEN CONFIRMED.<br>
+            THANKS FOR SUBSCRIBING
+            </h2>
+            <p>Now we just need to confirm your email address . please click the link in the email we sent you.Thanks! </p>
+           <a href="../../index.html">BACK TO DESIGNERCHALLENGE.COM</a> 
+        </article>
+        <footer>
+            <p>Created with love by a Webdesigner</p>
+            <img src="assets/img/love.png" alt="">
+        </footer>
+    </div>
+    <!--ist unsichtbar-->
     <section id="hero">
         <div id="logo">
             <img src="assets/img/logo.svg" alt="">
@@ -28,9 +42,9 @@
                 </h1>
                 <section id="icon1">
                 <h5>    
-                    A challenge to improve your product design skills by solving problems in your daily life.
+                    A challenge to improve your product design skills by solving problems in your daily life. <img src="assets/img/rocket.png" alt="rocket">
                 </h5>
-                <img src="assets/img/rocket.png" alt="rocket">
+               
             </section>
            
             </article>
@@ -174,14 +188,16 @@
         <p>
             Subscribe to be the first to hear about updates, tips and recommendations!
         </p>
-        <form action="">
+        <form name="form1" action=""onsubmit="return false">
             <input type="email" name="" id="email" placeholder="Write your email here"><br>
-            <a href="assets/html/subscribe.html">Subscribe</a>
+            <label for="email" id = "alert">Bitte gebe eine gütlige E-mail ein</label><br><br>
+            <input type="submit" value="Subscribe" id="sub" onclick="ValidateEmail(document.form1.email)">
         </form>
     </section>
     <footer>
         <p>Created with love by a Webdesigner</p>
         <img src="assets/img/love.png" alt="">
     </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

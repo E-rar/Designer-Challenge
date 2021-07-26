@@ -45,12 +45,15 @@ body{
 }
 #headline article h1{
     font-size:9vh;
+    padding-bottom:7%;
     
 }
 #headline article h5 {
-    display:inline;
+    
     font-size: 3vh;
-    margin-top:5%;
+    margin:5% 0 10% 0;
+    font-weight: 500;
+    
 }
 
 #headline article img{ /*Animation damit der Typ schwebt*/
@@ -122,7 +125,7 @@ width:15%;
     width:35%;
 }
 #article1 div{
-    padding-left:10%;
+    padding-left:12%;
 }
 #article1 div article:nth-child(2){
     padding:5% 0 0 6%;
@@ -130,7 +133,7 @@ width:15%;
 
 #article1 p{
     line-height: 4.5vh;
-    padding-left:21%;
+    padding-left:23%;
 }
 #article1{
     padding:0 0 15% 0;
@@ -165,11 +168,11 @@ width:15%;
 /*divs mit den hintergrundbildern*/
 .left{
     background-position:left;
-    margin-left:5%;
+    margin-left:10%;
 }
 .right{
     background-position: right;
-    margin-right:5%;
+    margin-right:10%;
 }
 .number{
     color:#dddddd ;
@@ -215,15 +218,15 @@ width:15%;
     background-size: 40%;
 }
 .left article{
-    width:40%;
+    width:45%;
     padding-top:5%;
     padding-left:50%;
 }
 .right article{
-    width:40%;
+    width:45%;
     padding-top:5%;
     padding-right:50%;
-    margin-left:5%;
+    margin-left:10%;
 }
 /*form-section*/
 #form-section{
@@ -243,13 +246,12 @@ input[type=email] {
     border:0;
     font-size:3vh;
     color:#0b0c17;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.473);
     text-align:center;
     border-radius:0.5vh;
     margin-bottom:3%;
   }
-  #form-section a {
-    text-decoration: none;
+input[type=submit] {
     padding:1.25% 6%;
     border:0;
     font-size:3vh;
@@ -261,6 +263,15 @@ input[type=email] {
     margin-bottom:3%;
     cursor:pointer;
   }
+#sub:hover {
+    background: linear-gradient(135deg, #ff3571 55% , #7235ff );
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.5);
+}
+
+#alert{
+    color:red;
+    opacity:0;
+}
 
 /*footer*/
 footer{
@@ -271,12 +282,20 @@ footer{
 }
 footer img{
     width:2%;
+    height:2%;
+    padding:6.5% 0.5% 0 0;
+}
+footer p{
+    padding:7% 0 0 0 ;
 }
 /*stylen des pop-ups*/
 #subscribed{
+    width:99vw;
     height:100vh;
-
-    
+    opacity:0;
+    background-color: #fff;
+    position:fixed;
+    z-index:-1;  
 }
 #subscribed img{
     width:3%;
@@ -287,9 +306,9 @@ footer img{
     height:50%;
     margin:5% auto;
     text-align:center;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.541);
 }
-#subscribed h1{
+#subscribed h2{
     font-size: 6vh;
     padding:5% 0;
 }
@@ -305,14 +324,17 @@ footer img{
     border-radius:0.5vh;
     cursor:pointer;
 }
+#subscribed a:hover{
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.644);
+}
 #subscribed p{
     padding-bottom:7%;
 }
 #subscribed footer img{
     width:2%;
     height:2%;
-    padding:2% 0.5% 0 0;
+    padding:6.5% 0.5% 0 0;
 }
 #subscribed footer p{
-    padding:2% 0 0 0 ;
+    padding:7% 0 0 0 ;
 }
